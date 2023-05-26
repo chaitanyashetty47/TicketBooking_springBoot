@@ -1,5 +1,6 @@
 package com.aditya.booking.api;
 
+import com.aditya.booking.api.subTypes.Casts;
 import org.springframework.data.domain.*;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -17,15 +18,16 @@ public class allMovies {
 
     @GetMapping("/list")
     public ResponseEntity<Page<Movie>> getAll(Pageable pageable) {
-        List<String> cast = new ArrayList<>();
-
+        List<Casts> cast = new ArrayList<>();
+    cast.add(new Casts("Aditya","thumbnail"));
+        cast.add(new Casts("Red","thumbnail"));
         List<Movie> movieList = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             if (i % 2 == 0) {
-                Movie temp = new Movie(i, "Aditya", "", "");
+                Movie temp = new Movie(i, "Aditya", "", "",cast);
                 movieList.add(temp);
             } else {
-                Movie temp = new Movie(i, "Raditya", "", "");
+                Movie temp = new Movie(i, "Raditya", "", "",cast);
                 movieList.add(temp);
             }
         }
