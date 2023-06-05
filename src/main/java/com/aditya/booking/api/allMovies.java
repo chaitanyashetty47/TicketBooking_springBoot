@@ -18,16 +18,16 @@ public class allMovies {
 
     @GetMapping("/list")
     public ResponseEntity<Page<Movie>> getAll(Pageable pageable) {
-        List<Casts> cast = new ArrayList<>();
+        ArrayList<Casts> cast = new ArrayList<>();
     cast.add(new Casts("Aditya","thumbnail"));
         cast.add(new Casts("Red","thumbnail"));
         List<Movie> movieList = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             if (i % 2 == 0) {
-                Movie temp = new Movie(i, "Aditya", "", "",cast);
+                Movie temp = new Movie( "Aditya", "", "",cast);
                 movieList.add(temp);
             } else {
-                Movie temp = new Movie(i, "Raditya", "", "",cast);
+                Movie temp = new Movie( "Raditya", "", "",cast);
                 movieList.add(temp);
             }
         }
