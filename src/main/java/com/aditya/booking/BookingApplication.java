@@ -13,10 +13,10 @@ public class BookingApplication {
 	}
 
 
-	@Bean
-	CommandLineRunner init(MakeTableFordData makeTableFordData) {
-		return args -> {
-			makeTableFordData.insertMovieData();
-		};
-	}
+//	@Bean
+//	CommandLineRunner init(MakeTableFordData makeTableFordData) {
+//		return args -> {
+//			makeTableFordData.insertMovieData();
+//		};
+//	}
 }
