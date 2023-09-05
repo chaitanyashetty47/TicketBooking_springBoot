@@ -24,7 +24,7 @@ public class MovieController {
         this.request = request;
     }
 
-    @GetMapping("/new")
+    @GetMapping("/fetchMovies")
     public ResponseEntity<Page<MovieDTO>> getAllMovies(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size) {
         // Get the base URL from the HttpServletRequest object
         String baseUrl = request.getRequestURL().toString();

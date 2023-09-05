@@ -17,15 +17,19 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "_user")
+@Table(name = "_user" )
 public class User implements UserDetails {
 
     @Id
     @GeneratedValue
     private Integer id ;
+
     private String firstname;
     private String lastname;
+
+    @Column(unique = true)
     private String email;
+
     private String password;
 @Enumerated(EnumType.STRING)
     private Role role;
