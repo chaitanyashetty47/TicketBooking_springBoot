@@ -1,4 +1,4 @@
-package com.aditya.booking.controller;
+package com.aditya.booking.imageProvider.controller;
 
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.MediaType;

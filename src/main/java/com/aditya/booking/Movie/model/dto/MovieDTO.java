@@ -1,4 +1,4 @@
-package com.aditya.booking.model;
+package com.aditya.booking.Movie.model.dto;
 
 import lombok.Getter;
 import lombok.Setter;

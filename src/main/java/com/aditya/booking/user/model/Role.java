@@ -1,4 +1,4 @@
-package com.aditya.booking.user;
+package com.aditya.booking.user.model;
 
 public enum Role {
     USER,

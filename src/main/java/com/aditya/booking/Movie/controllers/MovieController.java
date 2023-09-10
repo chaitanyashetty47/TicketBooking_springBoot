@@ -1,7 +1,7 @@
-package com.aditya.booking.controller;
+package com.aditya.booking.Movie.controllers;
 
-import com.aditya.booking.model.MovieDTO;
-import com.aditya.booking.service.MovieService;
+import com.aditya.booking.Movie.model.dto.MovieDTO;
+import com.aditya.booking.Movie.service.MovieService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

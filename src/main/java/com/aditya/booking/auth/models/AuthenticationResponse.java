@@ -1,5 +1,4 @@
-package com.aditya.booking.auth;
-
+package com.aditya.booking.auth.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,11 +7,9 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class AuthenticationRequest {
-    private String email;
-    String password;
+@NoArgsConstructor
+public class    AuthenticationResponse {
 
-
+    private String token;
 }

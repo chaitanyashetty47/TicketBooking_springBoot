@@ -1,5 +1,6 @@
-package com.aditya.booking.user;
+package com.aditya.booking.user.repository;
 
+import com.aditya.booking.user.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

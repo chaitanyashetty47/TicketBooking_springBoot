@@ -1,4 +1,4 @@
-package com.aditya.booking.model;
+package com.aditya.booking.Movie.model;
 
 
 import jakarta.persistence.*;
@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Table(name = "movies")
-public class MovieNew {
+public class Movie {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

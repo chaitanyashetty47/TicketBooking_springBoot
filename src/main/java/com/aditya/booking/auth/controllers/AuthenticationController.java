@@ -1,6 +1,10 @@
-package com.aditya.booking.auth;
+package com.aditya.booking.auth.controllers;
 
 
+import com.aditya.booking.auth.models.AuthenticationRequest;
+import com.aditya.booking.auth.models.AuthenticationResponse;
+import com.aditya.booking.auth.services.AuthenticationService;
+import com.aditya.booking.auth.models.RegisterRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,7 +28,7 @@ public class AuthenticationController {
 
     @PostMapping("/authenticate")
     public ResponseEntity<AuthenticationResponse>authenticate(
-            @RequestBody AuthenticationRequest  request
+            @RequestBody AuthenticationRequest request
     ){
 
         return ResponseEntity.ok(service.authenticate(request));

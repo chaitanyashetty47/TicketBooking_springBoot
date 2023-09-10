@@ -1,4 +1,4 @@
-package com.aditya.booking.auth;
+package com.aditya.booking.auth.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

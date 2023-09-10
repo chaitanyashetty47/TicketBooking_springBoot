@@ -1,9 +1,8 @@
-package com.aditya.booking.service;
+package com.aditya.booking.Movie.service;
 
-import com.aditya.booking.model.MovieNew;
-import com.aditya.booking.model.MovieDTO;
-import com.aditya.booking.repository.MovieRepository;
-import jakarta.servlet.http.HttpServletRequest;
+import com.aditya.booking.Movie.model.Movie;
+import com.aditya.booking.Movie.model.dto.MovieDTO;
+import com.aditya.booking.Movie.repository.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -21,11 +20,11 @@ public class MovieService {
 
     public Page<MovieDTO> getMoviesPaginated(int page, int size, String baseUrl) {
         Pageable pageable = PageRequest.of(page, size);
-        Page<MovieNew> moviesPage = movieRepository.findAll(pageable);
+        Page<Movie> moviesPage = movieRepository.findAll(pageable);
         return moviesPage.map(movie -> converToDto(movie, baseUrl));
     }
 
-    private MovieDTO converToDto(MovieNew movie, String baseUrl) {
+    private MovieDTO converToDto(Movie movie, String baseUrl) {
         MovieDTO movieDto = new MovieDTO();
         movieDto.setId(movie.getId());
         movieDto.setTitle(movie.getTitle());

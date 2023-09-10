@@ -1,5 +1,6 @@
-package com.aditya.booking.user;
+package com.aditya.booking.user.model;
 
+import com.aditya.booking.user.model.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

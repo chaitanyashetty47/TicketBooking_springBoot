@@ -1,9 +1,12 @@
-package com.aditya.booking.auth;
+package com.aditya.booking.auth.services;
 
+import com.aditya.booking.auth.models.AuthenticationRequest;
+import com.aditya.booking.auth.models.AuthenticationResponse;
+import com.aditya.booking.auth.models.RegisterRequest;
 import com.aditya.booking.config.JwtService;
-import com.aditya.booking.user.Role;
-import com.aditya.booking.user.User;
-import com.aditya.booking.user.UserRepository;
+import com.aditya.booking.user.model.Role;
+import com.aditya.booking.user.model.User;
+import com.aditya.booking.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
