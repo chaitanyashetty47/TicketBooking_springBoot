@@ -1,4 +1,4 @@
-package com.aditya.booking.Movie.model;
+package com.aditya.booking.movie.model;
 
 
 import jakarta.persistence.*;

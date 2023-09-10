@@ -1,8 +1,8 @@
-package com.aditya.booking.Movie.service;
+package com.aditya.booking.movie.service;
 
-import com.aditya.booking.Movie.model.Movie;
-import com.aditya.booking.Movie.model.dto.MovieDTO;
-import com.aditya.booking.Movie.repository.MovieRepository;
+import com.aditya.booking.movie.model.Movie;
+import com.aditya.booking.movie.model.dto.MovieDTO;
+import com.aditya.booking.movie.repository.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
