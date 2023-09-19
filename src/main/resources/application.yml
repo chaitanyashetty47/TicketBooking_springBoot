@@ -1,4 +1,9 @@
 spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://Aditya:root@cluster0.cjcxybq.mongodb.net/?retryWrites=true&w=majority
+      database: test
+
   datasource:
     url: jdbc:postgresql://localhost:5432/jwt_security
     username: postgres
